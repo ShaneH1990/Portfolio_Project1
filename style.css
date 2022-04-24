@@ -36,3 +36,12 @@
     text-decoration: none;
     color:red;
 }
+#bird{
+    height:500px;
+    width:1200px;
+}
+#head2{
+    text-align:center;
+    font-size:25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
