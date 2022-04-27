@@ -1,50 +1,69 @@
-#head1{
+h1 {
     text-align: center;
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:underline;
 }
-#nav1{
+#nav1 {
     text-align: center;
     font-size: 30px;
     letter-spacing: 3px;
     padding: 5px;
 }
-#nav1 a{
+#nav1 a {
     text-decoration: none;
     color: inherit;
     font-family:'Times New Roman', Times, serif;
 }
-#nav1 a:hover{
+#nav1 a:hover {
     color: white;
     background-color: black;
+    text-decoration:underline;
 }
-#spider{
+#spider {
     width: 1400px;
     height: 500px;
     padding: 50px;
 }
-#p1{
+#p1 {
     text-align: center;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#foot{
+#foot {
     text-align: center;
     padding: 100px;
+    font-size:20px;
 }
-#foot a{
-    text-decoration: none;
+#link1{
+    padding:10px;
     color:red;
+    font-size:25px;
 }
-#bird{
-    height:100px;
-    width:500px;
+#link2{
+    padding:10px;
+    font-size:25px;
+}
+#bird {
+    height:500px;
+    width:1200px;
 }
 
-#paragraph1{
+#paragraph1 {
     font-size:2px;
     text-align:center;
 }
-#head2{
+#head2 {
     text-align:center;
+}
+#paragraph{
+    text-align: center;
+    font-size:20px;
+    padding:20px;
+}
+#organised{
+    text-align:center;
+    font-size:20px;
+    padding:2px;
+
 }
