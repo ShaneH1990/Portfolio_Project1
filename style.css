@@ -1,23 +1,15 @@
-body{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 50px 600px 60px 50px 600px 25px 50px;
-    grid-template-areas: "hd"
-                         "navigation"
-                         "image"
-                         "hd2"
-                         "text"
-                         "pic"
-                         "text2"
-                         "bottom"
 
-}
 h1 {
     text-align: center;
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:underline;
-    grid-area: hd;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
 h2{
     text-align:center;
@@ -26,7 +18,11 @@ h2{
     text-decoration:underline;
     padding:50px;
     margin:-35px;
-    grid-area: hd2;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:100%;
 }
 .nav1 {
     text-align: center;
@@ -35,8 +31,13 @@ h2{
     padding: 20px;
     background-color:black;
     color:white;
+    display:flex;
     margin:-35px;
-    grid-area: navigation;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
 .nav1 a {
     text-decoration: none;
@@ -114,39 +115,63 @@ h2{
     padding:2px;
 
 }
-#imgsizing{
-    height:400px;
-    width:400px;
-    grid-area: pic;
-    display: flexbox;
-    flex-direction: row;
+#design{
+    height:500px;
+    width:450px;
+    display:grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 1500px; 
+    grid-template-areas: "image1 image2 image3";
+}
+#imgsizing1{
+    height:500px;
+    width:450px;
+    grid-area: image1;
+    display:flex;
+    flex-direction:column;
+    justify-content: left;
+    align-items: left;
+    height:33%;
+}
+#imgsizing2{
+    height:500px;
+    width:450px;
+    grid-area: image2;
+    display:flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height:33%;
 }
+#imgsizing3{
+    height:500px;
+    width:450px;
+    grid-area: image3;
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    height:33%;
+}
+
 #factsh2{
     text-align: left;
     font-size: 30px;
 }
-#orion{
-    height:400px;
-    width:450px;
-    grid-area: pic;
-    display:flexbox;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-}
+
 #alignvid{
     margin: 50px;
 }
 #bird{
     width:1400px;
     height:500px;
-    margin:36px;
 }
 #tree{
     width:1400px;
     height:500px;
-    margin:36px;
+    margin:36x;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
