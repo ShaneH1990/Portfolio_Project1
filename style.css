@@ -1,8 +1,23 @@
+body{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 600px 60px 50px 600px 25px 50px;
+    grid-template-areas: "hd"
+                         "navigation"
+                         "image"
+                         "hd2"
+                         "text"
+                         "pic"
+                         "text2"
+                         "bottom"
+
+}
 h1 {
     text-align: center;
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:underline;
+    grid-area: hd;
 }
 h2{
     text-align:center;
@@ -10,7 +25,8 @@ h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:underline;
     padding:50px;
-    margin:-40px;
+    margin:-35px;
+    grid-area: hd2;
 }
 .nav1 {
     text-align: center;
@@ -20,6 +36,7 @@ h2{
     background-color:black;
     color:white;
     margin:-35px;
+    grid-area: navigation;
 }
 .nav1 a {
     text-decoration: none;
@@ -34,20 +51,20 @@ h2{
 #spider {
     width: 1400px;
     height: 500px;
-    display:block;
-    margin:0 auto;
-    padding:36px;
+    margin:36px;
+    grid-area: image;
 }
 .p1 {
     text-align: center;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin:-20px;
+    grid-area: text;
 }
 .p2{
     text-align: left;
     font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: text2;
 }
 .foot {
     text-align: center;
@@ -56,6 +73,7 @@ h2{
     font-size:20px;
     background-color:black;
     color:white;
+    grid-area: bottom;
 }
 .foot a:hover{
     background-color:white;
@@ -73,25 +91,22 @@ h2{
 #cat {
     width:1400px;
     height:500px;
-    display:block;
-    margin:36px auto;
+    margin:36px;
 }
 
-.paragraph1 {
-    font-size:15px;
+#paragraph1 {
+    font-size:2px;
     text-align:center;
-    margin:20px;
-    padding:20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: text;
 }
 #head2 {
     text-align:center;
 }
-.paragraph{
+#paragraph{
     text-align: center;
     font-size:20px;
     padding:20px;
-    margin:-20px;
+    grid-area: text;
 }
 #organised{
     text-align:center;
@@ -100,31 +115,38 @@ h2{
 
 }
 #imgsizing{
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
+    grid-area: pic;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 #factsh2{
     text-align: left;
     font-size: 30px;
 }
 #orion{
-    height:500px;
+    height:400px;
     width:450px;
+    grid-area: pic;
+    display:flexbox;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
 }
 #alignvid{
-    display:block;
-    margin: 50px auto;
+    margin: 50px;
 }
 #bird{
-    height:500px;
     width:1400px;
-    display:block;
-    margin:36px auto;
+    height:500px;
+    margin:36px;
 }
 #tree{
-    padding:36px;
-    height:500px;
     width:1400px;
-    display:block;
-    margin:0 auto;
+    height:500px;
+    margin:36px;
 }
