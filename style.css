@@ -53,19 +53,20 @@ h2{
     width: 1400px;
     height: 500px;
     margin:36px;
-    grid-area: image;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .p1 {
     text-align: center;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    grid-area: text;
 }
 .p2{
     text-align: left;
     font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    grid-area: text2;
 }
 .foot {
     text-align: center;
@@ -74,7 +75,10 @@ h2{
     font-size:20px;
     background-color:black;
     color:white;
-    grid-area: bottom;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .foot a:hover{
     background-color:white;
@@ -93,12 +97,23 @@ h2{
     width:1400px;
     height:500px;
     margin:36px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #paragraph1 {
-    font-size:2px;
-    text-align:center;
-    grid-area: text;
+    font-size:25px;
+    padding:100px;
+    margin:25px;
+    grid-area: box3;
+    display:flex;
+    flex-direction: row;
+    justify-items: right;
+    align-items: right;
+    height:50%;
+
 }
 #head2 {
     text-align:center;
@@ -159,19 +174,49 @@ h2{
     font-size: 30px;
 }
 
+#viddiv{
+    display:grid;
+    grid-template-columns: 1000px 500px 50px;
+    grid-template-rows: 700px;
+    grid-template-areas: "box1 box2 box3";
+}
 #alignvid{
-    margin: 50px;
+    padding:35px;
+    grid-area: box1;
+    display:flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: left;
+    height:50%;
+
 }
 #bird{
     width:1400px;
     height:500px;
-}
-#tree{
-    width:1400px;
-    height:500px;
-    margin:36x;
+    margin:36px;
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#tree{
+    width:1400px;
+    height:500px;
+    margin:36px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and(max-width: 350px){
+    
+    #imgsizing1{
+        height:500px;
+        width:20%;
+    }
+    .nav1{
+        width:10%;
+    }
+
+
 }
