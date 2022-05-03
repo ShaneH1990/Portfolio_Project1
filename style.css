@@ -1,4 +1,4 @@
-
+/*Targets h1 headings*/
 h1 {
     text-align: center;
     font-size: 50px;
@@ -11,6 +11,7 @@ h1 {
     height: 100%;
 
 }
+/*targets h2 heading*/
 h2{
     text-align:center;
     font-size:30px;
@@ -24,6 +25,7 @@ h2{
     align-items: center;
     height:100%;
 }
+/*class attribute that targets the navigation bar*/
 .nav1 {
     text-align: center;
     font-size: 30px;
@@ -39,16 +41,19 @@ h2{
     height: 100%;
 
 }
+/* this makes changes to the anchor links on the navigation bar*/
 .nav1 a {
     text-decoration: none;
     color: inherit;
     font-family:'Times New Roman', Times, serif;
 }
+/* this will make changes to the anchor tag when the mouse hovers over it*/
 .nav1 a:hover {
     color: black;
     background-color:white;
     text-decoration:underline;
 }
+/*This identifier will target and make changes to the spider image(peru-nazca-lines-spider.jpg)*/
 #spider {
     width: 1400px;
     height: 500px;
@@ -58,6 +63,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*class attribute used for more than one element*/
 .p1 {
     text-align: center;
     font-size: 15px;
@@ -67,6 +73,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*makes changes to any element given the class p2*/
 .p2{
     text-align: left;
     font-size: 15px;
@@ -76,6 +83,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*footer of webpages*/
 .foot {
     text-align: center;
     padding: 25px;
@@ -88,19 +96,23 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*changes made when a anchor tag is hovered over on the footer*/
 .foot a:hover{
     background-color:white;
     color:black;
 }
-#link1{
+/*changes color to red in first footer link and sets size and padding*/
+.link1{
     padding:10px;
     color:red;
     font-size:25px;
 }
-#link2{
+/*changes padding and fontsize of the second link in the footer*/
+.link2{
     padding:10px;
     font-size:25px;
 }
+/*makes changes to the cat image on history page(nazca-cat2.jpg)*/
 #cat {
     width:1400px;
     height:500px;
@@ -110,7 +122,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
-
+/*identifier that targets and changes text properties*/
 #paragraph1 {
     padding:10px;
     font-size:20px;
@@ -121,7 +133,7 @@ h2{
     align-items: left;
     height:50%;
 }
-
+/* another identifier that targets and changes text properties*/
 #paragraph2{
     padding:8px;
     font-size:20px;
@@ -132,6 +144,7 @@ h2{
     align-items: right;
     height:50%;
 }
+/*makes changes using a class attribute for list items in facts html page*/
 .factp{
     font-size:20px;
     display:flex;
@@ -139,9 +152,11 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/**/
 #head2 {
     text-align:center;
 }
+/*class element for making changes to multiple paragraph elements in facts webpage*/
 .paragraph{
     text-align: left;
     font-size:20px;
@@ -150,12 +165,14 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*indetifier for organised list in facts webpage*/
 #organised{
     text-align:center;
     font-size:20px;
     padding:2px;
 
 }
+/*indentifier used for div containing 3 images in index webpage*/
 #design{
     height:500px;
     width:450px;
@@ -164,6 +181,7 @@ h2{
     grid-template-rows: 1500px; 
     grid-template-areas: "image1 image2 image3";
 }
+/*changes properties of first image in the div of index webpage*/
 #imgsizing1{
     height:500px;
     width:450px;
@@ -174,6 +192,7 @@ h2{
     align-items: left;
     height:33%;
 }
+/*changes properties of second image in the div of index webpage*/
 #imgsizing2{
     height:500px;
     width:450px;
@@ -184,6 +203,7 @@ h2{
     align-items: center;
     height:33%;
 }
+/*changes properties of third image in the div of index webpage*/
 #imgsizing3{
     height:500px;
     width:450px;
@@ -194,18 +214,19 @@ h2{
     align-items: right;
     height:33%;
 }
-
-#factsh2{
+/*changes alignment and and size of font on the h2 headings in facts webpage*/
+.factsh2{
     text-align: left;
     font-size: 30px;
 }
-
+/*identifier used for grid of the embedded video on history webpage*/
 #viddiv{
     display:grid;
     grid-template-columns: 800px 40px 250px 250px;
     grid-template-rows: 500px;
     grid-template-areas: "box1 box2 box3 box4";
 }
+/*aligns the video on the webpage */
 #alignvid{
     padding:30px;
     grid-area: box1;
@@ -216,6 +237,7 @@ h2{
     height:80%;
 
 }
+/*changes properties of the bird image on history page(Nazca-lines.jpg)*/
 #bird{
     width:1400px;
     height:500px;
@@ -225,6 +247,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*tree image used on conspiracy webpage*/
 #tree{
     width:1400px;
     height:500px;
@@ -234,6 +257,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
+/*grid used for #m1 text and #cog image */
 #mysterygrid{
     display:grid;
     grid-template-columns: 700px 500px;
@@ -241,6 +265,7 @@ h2{
     grid-template-areas: "mg1 mg2";
 
 }
+/*text on conspiracy page*/
 #m1{
     font-size: 15px;
     grid-area: mg1;
@@ -249,6 +274,7 @@ h2{
     justify-content: left;
     align-items: left;
 }
+/*image(chariot.jpeg) on conspiracy page*/
 #cog{
     grid-area: mg2;
     padding:20px;
