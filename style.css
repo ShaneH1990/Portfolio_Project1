@@ -62,11 +62,19 @@ h2{
     text-align: center;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .p2{
     text-align: left;
     font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .foot {
     text-align: center;
@@ -103,7 +111,7 @@ h2{
     align-items: center;
 }
 
-.paragraph1 {
+#paragraph1 {
     padding:10px;
     font-size:20px;
     grid-area: box3;
@@ -114,22 +122,33 @@ h2{
     height:50%;
 }
 
-.paragraph2{
-    font-size:15px;
+#paragraph2{
+    padding:8px;
+    font-size:20px;
+    grid-area: box4;
+    display:flex;
+    flex-direction: column;
+    justify-items: right;
+    align-items: right;
+    height:50%;
+}
+.factp{
+    font-size:20px;
     display:flex;
     flex-direction: row;
-    justify-items: left;
-    align-items: left;
-    height:50%;
+    justify-content: center;
+    align-items: center;
 }
 #head2 {
     text-align:center;
 }
-#paragraph{
-    text-align: center;
+.paragraph{
+    text-align: left;
     font-size:20px;
-    padding:20px;
-    grid-area: text;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #organised{
     text-align:center;
@@ -183,9 +202,9 @@ h2{
 
 #viddiv{
     display:grid;
-    grid-template-columns: 800px 40px 250px;
+    grid-template-columns: 800px 40px 250px 250px;
     grid-template-rows: 500px;
-    grid-template-areas: "box1 box2 box3";
+    grid-template-areas: "box1 box2 box3 box4";
 }
 #alignvid{
     padding:30px;
@@ -214,6 +233,31 @@ h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#mysterygrid{
+    display:grid;
+    grid-template-columns: 700px 500px;
+    grid-template-rows: 550px;
+    grid-template-areas: "mg1 mg2";
+
+}
+#m1{
+    font-size: 15px;
+    grid-area: mg1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+#cog{
+    grid-area: mg2;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:80%;
+
 }
 @media screen and(max-width: 350px){
     
