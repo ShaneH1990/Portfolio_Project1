@@ -100,7 +100,7 @@ h2{
 /*changes made when a anchor tag is hovered over on the footer*/
 .foot a:hover{
     background-color:white;
-    color:black;
+    color:red;
 }
 /*changes color to red in first footer link and sets size and padding*/
 .link1{
