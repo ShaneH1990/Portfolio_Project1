@@ -422,35 +422,3 @@ h2{
     height:80%;
 }
 
-@media screen and(max-width: 350px){
-    #spider{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        max-width:100%;
-    }
-    .nav1{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        max-width:50%;
-    }
-    #design{
-        height:500px;
-        width:450px;
-        display:grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 500px 500px 500px; 
-        grid-template-areas: "resize1 resize2 resize3";
-    }
-    #imgsizing1{
-        grid-area: resize1;
-    }
-    #imgsizing2{
-        grid-area: resize2;
-    }
-    #imgsizing3{
-        grid-area: resize3;
-    }
-
-}
