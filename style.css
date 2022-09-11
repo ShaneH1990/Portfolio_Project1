@@ -304,6 +304,9 @@ h2{
         flex-direction: row;
 
     }
+    #top{
+        font-size:10px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -421,4 +424,4 @@ h2{
     align-items: left;
     height:80%;
 }
-
+}
