@@ -88,7 +88,7 @@ h2{
 .foot {
     text-align: center;
     padding: 25px;
-    margin:-2px;
+    margin:-5px;
     font-size:20px;
     background-color:black;
     color:white;
@@ -104,13 +104,18 @@ h2{
 }
 /*changes color to red in first footer link and sets size and padding*/
 .link1{
-    padding:10px;
+    padding:2px;
     color:red;
     font-size:25px;
 }
 /*changes padding and fontsize of the second link in the footer*/
 .link2{
-    padding:10px;
+    padding:2px;
+    font-size:25px;
+}
+
+.link2{
+    padding:-2px;
     font-size:25px;
 }
 /*makes changes to the cat image on history page(nazca-cat2.jpg)*/
@@ -307,6 +312,7 @@ h2{
     #top{
         font-size:10px;
     }
+    
 }
 
 @media screen and (max-width: 500px){
